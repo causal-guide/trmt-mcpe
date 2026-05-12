@@ -1,0 +1,46 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "trmt",
+		"description": "trmt Behavior Pack",
+		"uuid": "4069705b-e04d-19ac-1cc2-655f680dc562",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 16, 0]
+	},
+	"metadata": {
+		"authors": ["causal"],
+		"generated_with": {
+			"blockbench_block_wizard": ["1.7.0"]
+		}
+	},
+	"modules": [
+		{
+			"description": "Behavior",
+			"version": [1, 0, 0],
+			"uuid": "3049dce9-3b70-b225-f941-8de7f21d517a",
+			"type": "data"
+		},
+		{
+			"description": "Behavior",
+			"version": [1, 0, 0],
+			"uuid": "5d749b4d-ab61-4d59-fd61-7e683d86e420",
+			"type": "script",
+			"language": "javascript",
+			"entry": "scripts/main.js"
+		}
+	],
+	"dependencies": [
+		{
+			"module_name": "@minecraft/server",
+			"version": "2.6.0"
+		},
+		{
+			"module_name": "@minecraft/server-ui",
+			"version": "2.0.0"
+		},
+		{
+			"uuid": "94122449-960e-c111-156e-71fe237f4575",
+			"version": [1, 0, 0]
+		}
+	]
+}

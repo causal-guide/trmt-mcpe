@@ -1,0 +1,35 @@
+{
+	"resource_pack_name": "vanilla",
+	"texture_name": "atlas.terrain",
+	"padding": 8,
+	"num_mip_levels": 4,
+	"texture_data": {
+		"eroded_dirt_0": {
+			"textures": "textures/blocks/eroded_dirt_0"
+		},
+		"eroded_dirt_1": {
+			"textures": "textures/blocks/eroded_dirt_1"
+		},
+		"eroded_dirt_2": {
+			"textures": "textures/blocks/eroded_dirt_2"
+		},
+		"eroded_grass_block_top_0": {
+			"textures": "textures/blocks/eroded_grass_block_top_0"
+		},
+		"eroded_grass_block_top_1": {
+			"textures": "textures/blocks/eroded_grass_block_top_1"
+		},
+		"eroded_grass_block_top_2": {
+			"textures": "textures/blocks/eroded_grass_block_top_2"
+		},
+		"eroded_grass_block_top_3": {
+			"textures": "textures/blocks/eroded_grass_block_top_3"
+		},
+		"eroded_grass_block_top_4": {
+			"textures": "textures/blocks/eroded_grass_block_top_4"
+		},
+		"eroded_grass_block_side": {
+			"textures": "textures/blocks/eroded_grass_block_side"
+		}
+	}
+}

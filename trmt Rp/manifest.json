@@ -1,0 +1,30 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "trmt",
+		"description": "trmt Resource Pack",
+		"uuid": "94122449-960e-c111-156e-71fe237f4575",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 16, 0]
+	},
+	"metadata": {
+		"authors": ["causal"],
+		"generated_with": {
+			"blockbench_block_wizard": ["1.7.0"]
+		}
+	},
+	"modules": [
+		{
+			"description": "trmt",
+			"type": "resources",
+			"uuid": "b3567368-5310-161f-551a-e352fda6cfdd",
+			"version": [1, 0, 0]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "4069705b-e04d-19ac-1cc2-655f680dc562",
+			"version": [1, 0, 0]
+		}
+	]
+}

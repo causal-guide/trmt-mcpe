@@ -1,0 +1,173 @@
+{
+  "format_version": "1.21.120",
+  "minecraft:block": {
+    "description": {
+      "identifier": "trmt:eroded_grass_block",
+      "menu_category": {
+        "category": "nature"
+      },
+      "states": {
+        "trmt:erosion": [0, 1, 2, 3, 4]
+      }
+    },
+    "components": {
+      "minecraft:collision_box": true,
+      "minecraft:selection_box": true,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 3.0
+      },
+      "minecraft:destruction_particles": {
+        "texture": "dirt"
+      },
+      "minecraft:geometry": "geometry.eroded_dirt",
+      "trmt:erosion": {
+        "original_block": "minecraft:grass_block"
+      },
+      "minecraft:material_instances": {
+        "up": {
+          "texture": "eroded_grass_block_top_0",
+          "tint_method": "grass",
+          "alpha_masked_tint": true
+        },
+        "down": {
+          "texture": "dirt"
+        },
+        "*": {
+          "texture": "eroded_grass_block_side",
+              "tint_method": "grass",
+              "alpha_masked_tint": true
+        }
+      },
+      "minecraft:light_dampening": 0,
+      "minecraft:map_color": "#BA8524",
+      "tag:minecraft:is_shovel_item_destructible": {},
+      "minecraft:loot": "loot_tables/blocks/eroded_dirt.json"
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state('trmt:erosion') == 0",
+        "components": {
+          "minecraft:material_instances": {
+            "up": {
+              "texture": "eroded_grass_block_top_0",
+              "tint_method": "grass",
+              "alpha_masked_tint": true
+            },
+            "down": {
+              "texture": "dirt"
+            },
+            "*": {
+              "texture": "eroded_grass_block_side",
+              "tint_method": "grass",
+              "alpha_masked_tint": true
+            }
+          },
+          "minecraft:transformation": {
+            "scale": [1.0, 1.0, 1.0],
+            "scale_pivot": [0, -0.5, 0]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('trmt:erosion') == 1",
+        "components": {
+          "minecraft:material_instances": {
+            "up": {
+              "texture": "eroded_grass_block_top_1",
+              "tint_method": "grass",
+              "alpha_masked_tint": true
+            },
+            "down": {
+              "texture": "dirt"
+            },
+            "*": {
+              "texture": "eroded_grass_block_side",
+              "tint_method": "grass",
+              "alpha_masked_tint": true
+            }
+          },
+          "minecraft:transformation": {
+            "scale": [1.0, 0.95, 1.0],
+            "scale_pivot": [0, -0.5, 0]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('trmt:erosion') == 2",
+        "components": {
+          "minecraft:material_instances": {
+            "up": {
+              "texture": "eroded_grass_block_top_0",
+              "tint_method": "grass",
+              "alpha_masked_tint": true, // Force smooth lighting
+              "face_dimming": true
+            },
+            "down": {
+              "texture": "dirt"
+            },
+            "*": {
+              "texture": "eroded_grass_block_side",
+              "tint_method": "grass",
+              "alpha_masked_tint": true
+            }
+          },
+          "minecraft:transformation": {
+            "scale": [1.0, 0.9, 1.0],
+            "scale_pivot": [0, -0.5, 0]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('trmt:erosion') == 3",
+        "components": {
+          "minecraft:material_instances": {
+            "up": {
+              "texture": "eroded_grass_block_top_3",
+              "tint_method": "grass",
+              "alpha_masked_tint": true
+            },
+            "down": {
+              "texture": "dirt"
+            },
+            "*": {
+              "texture": "eroded_grass_block_side",
+              "tint_method": "grass",
+              "alpha_masked_tint": true
+            }
+          },
+          "minecraft:transformation": {
+            "scale": [1.0, 0.85, 1.0],
+            "scale_pivot": [0, -0.5, 0]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('trmt:erosion') == 4",
+        "components": {
+          "minecraft:material_instances": {
+            "up": {
+              "texture": "eroded_grass_block_top_4",
+              "tint_method": "grass",
+              "alpha_masked_tint": true
+            },
+            "down": {
+              "texture": "dirt"
+            },
+            "*": {
+              "texture": "eroded_grass_block_side",
+              "tint_method": "grass",
+              "alpha_masked_tint": true
+            }
+          },
+          "minecraft:transformation": {
+            "scale": [1.0, 0.8, 1.0],
+            "scale_pivot": [0, -0.5, 0]
+          }
+        }
+      }
+    ]
+  }
+}

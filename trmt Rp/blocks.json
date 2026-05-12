@@ -1,0 +1,9 @@
+{
+	"format_version": "1.21.0",
+	"trmt:eroded_grass_block": {
+		"sound": "grass"
+	},
+	"trmt:eroded_dirt": {
+		"sound": "gravel"
+	}
+}

@@ -1,0 +1,83 @@
+{
+	"format_version": "1.21.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "trmt:eroded_dirt",
+			"menu_category": {
+				"category": "nature"
+			},
+			"states":{
+			"trmt:erosion": {
+                    "values": { "min": 0, "max": 2 } // The same as [0, 1, 2, 3, 4, 5]
+                }
+			}
+		},
+		"components": {
+			"minecraft:collision_box": true,
+			"minecraft:selection_box": true,
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 1
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 30
+			},
+			"trmt:erosion":{
+				"original_block":"minecraft:dirt"
+			},
+			"minecraft:geometry": "geometry.eroded_dirt",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "eroded_dirt_0",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:map_color": "#BA8524",
+			"tag:minecraft:is_shovel_item_destructible": {},
+			"minecraft:loot": "loot_tables/blocks/eroded_dirt.json"
+		},
+		"permutations":[
+			{
+				"condition": "query.block_state('trmt:erosion') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "eroded_dirt_0"
+						}
+					},
+					"minecraft:transformation": {
+						"scale": [1, 0.95, 1],
+						"scale_pivot" : [0,-0.5,0]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('trmt:erosion') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "eroded_dirt_1"
+						}
+					},
+					"minecraft:transformation": {
+						"scale": [1, 0.9, 1],
+						"scale_pivot" : [0,-0.5,0]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('trmt:erosion') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "eroded_dirt_2"
+						}
+					},
+					"minecraft:transformation": {
+						"scale": [1, 0.85, 1],
+						"scale_pivot" : [0,-0.5,0]
+					}
+				}
+			}
+		]
+	}
+}
